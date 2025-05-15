@@ -1,0 +1,141 @@
+import SwiftUI
+import CoreLocation
+
+// MARK: - API Response Models
+struct ApiResponse: Decodable {
+    var data: String
+}
+
+// MARK: - CityEmotion Model
+struct CityEmotion: Identifiable {
+    let id = UUID()
+    let cityName: String
+    let coordinate: CLLocationCoordinate2D
+    let emoji: String
+    let sentiment: String
+    
+    // Optional additional properties
+    var intensity: Double = 0.7
+    var thoughts: [String] = []
+    var categories: [String] = []
+}
+
+
+    // Required for Hashable
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
+    static func == (lhs: CitySentiment, rhs: CitySentiment) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
+
+// MARK: - Mood Models
+enum Mood {
+    case happy(intensity: Double)
+    case sad(intensity: Double)
+    case angry(intensity: Double)
+    case calm(intensity: Double)
+
+    var emoji: String {
+        switch self {
+        case .happy: return "😊"
+        case .sad: return "😢"
+        case .angry: return "😡"
+        case .calm: return "😌"
+        }
+    }
+
+    var color: Color {
+        switch self {
+        case .happy: return .yellow
+        case .sad: return .blue
+        case .angry: return .red
+        case .calm: return .green
+        }
+    }
+
+    var intensity: Double {
+        switch self {
+        case .happy(let i), .sad(let i), .angry(let i), .calm(let i):
+            return min(max(i, 0.2), 1.0) // clamp to 0.2–1.0
+        }
+    }
+}
+
+struct MoodAnnotation: Identifiable {
+    let id = UUID()
+    let coordinate: CLLocationCoordinate2D
+    let emoji: String
+    let color: Color
+    let intensity: Double
+}
+
+// MARK: - Utility Functions
+func getSentimentEmoji(sentiment: String) -> String {
+    switch sentiment.lowercased() {
+    case "positive":
+        return "😊"
+    case "negative":
+        return "😡"
+    case "mixed":
+        return "😐"
+    case "neutral":
+        return "😌"
+    default:
+        return "😶"
+    }
+}
+
+func getSentimentLabel(sentiment: String) -> String {
+    switch sentiment.lowercased() {
+    case "positive":
+        return "Joyful"
+    case "negative":
+        return "Angry"
+    case "mixed":
+        return "Mixed"
+    case "neutral":
+        return "Calm"
+    default:
+        return "Neutral"
+    }
+}
+
+func getSentimentIntensity(sentiment: String) -> Double {
+    switch sentiment.lowercased() {
+    case "positive":
+        return 0.8
+    case "negative":
+        return 0.4
+    case "mixed":
+        return 0.6
+    case "neutral":
+        return 0.7
+    default:
+        return 0.5
+    }
+}
+
+func getSentimentColor(sentiment: String) -> Color {
+    switch sentiment.lowercased() {
+    case "positive":
+        return Color.green
+    case "negative":
+        return Color.red
+    case "mixed":
+        return Color.orange
+    case "neutral":
+        return Color.blue
+    default:
+        return Color.gray
+    }
+}
+
+// MARK: - Helper Extensions
+extension Optional {
+    var isNil: Bool {
+        return self == nil
+    }
+}

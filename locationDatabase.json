@@ -1,0 +1,156 @@
+[
+  {
+    "id": "201",
+    "city": "Jersey City",
+    "state": "New Jersey",
+    "country": "USA",
+    "timezone": "America/New_York",
+    "latitude": 40.7282,
+    "longitude": -74.0776,
+    "population": 262075,
+    "popularMoods": ["Urban", "Busy", "Diverse"]
+  },
+  {
+    "id": "212",
+    "city": "Manhattan",
+    "state": "New York",
+    "country": "USA",
+    "timezone": "America/New_York",
+    "latitude": 40.7831,
+    "longitude": -73.9712,
+    "population": 1628706,
+    "popularMoods": ["Ambitious", "Cultural", "Fast-paced"]
+  },
+  {
+    "id": "213",
+    "city": "Los Angeles",
+    "state": "California",
+    "country": "USA",
+    "timezone": "America/Los_Angeles",
+    "latitude": 34.0522,
+    "longitude": -118.2437,
+    "population": 3898747,
+    "popularMoods": ["Creative", "Sunny", "Relaxed"]
+  },
+  {
+    "id": "305",
+    "city": "Miami",
+    "state": "Florida",
+    "country": "USA",
+    "timezone": "America/New_York",
+    "latitude": 25.7617,
+    "longitude": -80.1918,
+    "population": 442241,
+    "popularMoods": ["Tropical", "Energetic", "Vibrant"]
+  },
+  {
+    "id": "312",
+    "city": "Chicago",
+    "state": "Illinois",
+    "country": "USA",
+    "timezone": "America/Chicago",
+    "latitude": 41.8781,
+    "longitude": -87.6298,
+    "population": 2746388,
+    "popularMoods": ["Windy", "Creative", "Industrious"]
+  },
+  {
+    "id": "404",
+    "city": "Atlanta",
+    "state": "Georgia",
+    "country": "USA",
+    "timezone": "America/New_York",
+    "latitude": 33.7490,
+    "longitude": -84.3880,
+    "population": 498715,
+    "popularMoods": ["Southern", "Urban", "Modern"]
+  },
+  {
+    "id": "415",
+    "city": "San Francisco",
+    "state": "California",
+    "country": "USA",
+    "timezone": "America/Los_Angeles",
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "population": 873965,
+    "popularMoods": ["Innovative", "Foggy", "Progressive"]
+  },
+  {
+    "id": "503",
+    "city": "Portland",
+    "state": "Oregon",
+    "country": "USA",
+    "timezone": "America/Los_Angeles",
+    "latitude": 45.5051,
+    "longitude": -122.6750,
+    "population": 654741,
+    "popularMoods": ["Quirky", "Rainy", "Outdoorsy"]
+  },
+  {
+    "id": "512",
+    "city": "Austin",
+    "state": "Texas",
+    "country": "USA",
+    "timezone": "America/Chicago",
+    "latitude": 30.2672,
+    "longitude": -97.7431,
+    "population": 964254,
+    "popularMoods": ["Musical", "Techy", "Artsy"]
+  },
+  {
+    "id": "602",
+    "city": "Phoenix",
+    "state": "Arizona",
+    "country": "USA",
+    "timezone": "America/Phoenix",
+    "latitude": 33.4484,
+    "longitude": -112.0740,
+    "population": 1680992,
+    "popularMoods": ["Sunny", "Warm", "Desert"]
+  },
+  {
+    "id": "615",
+    "city": "Nashville",
+    "state": "Tennessee",
+    "country": "USA",
+    "timezone": "America/Chicago",
+    "latitude": 36.1627,
+    "longitude": -86.7816,
+    "population": 670820,
+    "popularMoods": ["Musical", "Country", "Friendly"]
+  },
+  {
+    "id": "702",
+    "city": "Las Vegas",
+    "state": "Nevada",
+    "country": "USA",
+    "timezone": "America/Los_Angeles",
+    "latitude": 36.1699,
+    "longitude": -115.1398,
+    "population": 651319,
+    "popularMoods": ["Exciting", "Lively", "Entertaining"]
+  },
+  {
+    "id": "713",
+    "city": "Houston",
+    "state": "Texas",
+    "country": "USA",
+    "timezone": "America/Chicago",
+    "latitude": 29.7604,
+    "longitude": -95.3698,
+    "population": 2320268,
+    "popularMoods": ["Southern", "Diverse", "Energetic"]
+  },
+  {
+    "id": "917",
+    "city": "New York City",
+    "state": "New York",
+    "country": "USA",
+    "timezone": "America/New_York",
+    "latitude": 40.7128,
+    "longitude": -74.0060,
+    "population": 8336817,
+    "popularMoods": ["Busy", "Creative", "Ambitious"]
+  }
+]
